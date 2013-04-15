@@ -1,0 +1,1194 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Code_Snippets</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Code%20Snippets.html"><i class="icon-folder-open"></i> Code Snippets</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">6</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: The constructor function for our class"><span class="description">The constructor function for our class</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_activate" title="activate :: Activates a snippet"><span class="description">Activates a snippet</span><pre>activate()</pre></a></li>
+<li class="method public "><a href="#method_build_snippet_object" title="build_snippet_object :: Converts an array of snippet data into a snippet object"><span class="description">Converts an array of snippet data into a snippet object</span><pre>build_snippet_object()</pre></a></li>
+<li class="method public "><a href="#method_create_table" title="create_table :: Create a single snippet table
+if one of the same name does not already exist"><span class="description">Create a single snippet table
+if one of the same name does not already exist</span><pre>create_table()</pre></a></li>
+<li class="method public "><a href="#method_deactivate" title="deactivate :: Deactivates selected snippets"><span class="description">Deactivates selected snippets</span><pre>deactivate()</pre></a></li>
+<li class="method public "><a href="#method_delete_snippet" title="delete_snippet :: Deletes a snippet from the database"><span class="description">Deletes a snippet from the database</span><pre>delete_snippet()</pre></a></li>
+<li class="method public "><a href="#method_escape_snippet_data" title="escape_snippet_data :: Escape snippet data for inserting into the database"><span class="description">Escape snippet data for inserting into the database</span><pre>escape_snippet_data()</pre></a></li>
+<li class="method public "><a href="#method_execute_snippet" title="execute_snippet :: Execute a snippet"><span class="description">Execute a snippet</span><pre>execute_snippet()</pre></a></li>
+<li class="method public "><a href="#method_export" title="export :: Exports snippets as an XML file"><span class="description">Exports snippets as an XML file</span><pre>export()</pre></a></li>
+<li class="method public "><a href="#method_export_php" title="export_php :: Exports snippets as a PHP file"><span class="description">Exports snippets as a PHP file</span><pre>export_php()</pre></a></li>
+<li class="method public "><a href="#method_get_snippet" title="get_snippet :: Retrieve a single snippets from the database."><span class="description">Retrieve a single snippets from the database.</span><pre>get_snippet()</pre></a></li>
+<li class="method public "><a href="#method_get_snippets" title="get_snippets :: Retrieve a list of snippets from the database"><span class="description">Retrieve a list of snippets from the database</span><pre>get_snippets()</pre></a></li>
+<li class="method public "><a href="#method_get_table_name" title="get_table_name :: Return the appropriate snippet table name"><span class="description">Return the appropriate snippet table name</span><pre>get_table_name()</pre></a></li>
+<li class="method public "><a href="#method_import" title="import :: Imports snippets from an XML file"><span class="description">Imports snippets from an XML file</span><pre>import()</pre></a></li>
+<li class="method public "><a href="#method_init" title="init :: Load the plugin completely"><span class="description">Load the plugin completely</span><pre>init()</pre></a></li>
+<li class="method public "><a href="#method_maybe_create_tables" title="maybe_create_tables :: Create the snippet tables if they do not already exist"><span class="description">Create the snippet tables if they do not already exist</span><pre>maybe_create_tables()</pre></a></li>
+<li class="method public "><a href="#method_run_snippets" title="run_snippets :: Run the active snippets"><span class="description">Run the active snippets</span><pre>run_snippets()</pre></a></li>
+<li class="method public "><a href="#method_save_snippet" title="save_snippet :: Saves a snippet to the database."><span class="description">Saves a snippet to the database.</span><pre>save_snippet()</pre></a></li>
+<li class="method public "><a href="#method_set_table_vars" title="set_table_vars :: Register the snippet table names with WordPress"><span class="description">Register the snippet table names with WordPress</span><pre>set_table_vars()</pre></a></li>
+<li class="method public "><a href="#method_setup_ms_roles" title="setup_ms_roles :: Register the multisite user roles and capabilities"><span class="description">Register the multisite user roles and capabilities</span><pre>setup_ms_roles()</pre></a></li>
+<li class="method public "><a href="#method_setup_roles" title="setup_roles :: Register the user roles and capabilities"><span class="description">Register the user roles and capabilities</span><pre>setup_roles()</pre></a></li>
+<li class="method public "><a href="#method_setup_vars" title="setup_vars :: Initialize variables"><span class="description">Initialize variables</span><pre>setup_vars()</pre></a></li>
+<li class="method public "><a href="#method_unescape_snippet_data" title="unescape_snippet_data :: Unescape snippet data after retrieval from the database
+ready for use"><span class="description">Unescape snippet data after retrieval from the database
+ready for use</span><pre>unescape_snippet_data()</pre></a></li>
+<li class="method public "><a href="#method_uninstall" title="uninstall :: Cleans up data created by the Code_Snippets class"><span class="description">Cleans up data created by the Code_Snippets class</span><pre>uninstall()</pre></a></li>
+<li class="method public "><a href="#method_upgrade" title="upgrade :: Preform upgrade tasks such as deleting and updating options"><span class="description">Preform upgrade tasks such as deleting and updating options</span><pre>upgrade()</pre></a></li>
+<li class="method public "><a href="#method_user_can" title="user_can :: Check if the current user can perform some action on snippets or not"><span class="description">Check if the current user can perform some action on snippets or not</span><pre>user_can()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_admin" title="$admin :: Stores an instance of the administration class"><span class="description"></span><pre>$admin</pre></a></li>
+<li class="property public "><a href="#property_admin_import" title="$admin_import :: These are now deprecated in favor of those in
+the Code_Snippets_Admin class, but maintained as
+references so we don't break existing code"><span class="description"></span><pre>$admin_import</pre></a></li>
+<li class="property public "><a href="#property_admin_import_url" title="$admin_import_url :: These are now deprecated in favor of those in
+the Code_Snippets_Admin class, but maintained as
+references so we don't break existing code"><span class="description"></span><pre>$admin_import_url</pre></a></li>
+<li class="property public "><a href="#property_admin_manage" title="$admin_manage :: These are now deprecated in favor of those in
+the Code_Snippets_Admin class, but maintained as
+references so we don't break existing code"><span class="description"></span><pre>$admin_manage</pre></a></li>
+<li class="property public "><a href="#property_admin_manage_url" title="$admin_manage_url :: These are now deprecated in favor of those in
+the Code_Snippets_Admin class, but maintained as
+references so we don't break existing code"><span class="description"></span><pre>$admin_manage_url</pre></a></li>
+<li class="property public "><a href="#property_admin_single" title="$admin_single :: These are now deprecated in favor of those in
+the Code_Snippets_Admin class, but maintained as
+references so we don't break existing code"><span class="description"></span><pre>$admin_single</pre></a></li>
+<li class="property public "><a href="#property_admin_single_url" title="$admin_single_url :: These are now deprecated in favor of those in
+the Code_Snippets_Admin class, but maintained as
+references so we don't break existing code"><span class="description"></span><pre>$admin_single_url</pre></a></li>
+<li class="property public "><a href="#property_basename" title="$basename :: Variables to hold plugin paths"><span class="description"></span><pre>$basename</pre></a></li>
+<li class="property public "><a href="#property_file" title="$file :: Variables to hold plugin paths"><span class="description"></span><pre>$file</pre></a></li>
+<li class="property public "><a href="#property_list_table" title="$list_table :: Stores an instance of the list table class"><span class="description"></span><pre>$list_table</pre></a></li>
+<li class="property public "><a href="#property_ms_table" title="$ms_table :: Stores the snippet table names"><span class="description"></span><pre>$ms_table</pre></a></li>
+<li class="property public "><a href="#property_plugin_dir" title="$plugin_dir :: Variables to hold plugin paths"><span class="description"></span><pre>$plugin_dir</pre></a></li>
+<li class="property public "><a href="#property_plugin_url" title="$plugin_url :: Variables to hold plugin paths"><span class="description"></span><pre>$plugin_url</pre></a></li>
+<li class="property public "><a href="#property_table" title="$table :: Stores the snippet table names"><span class="description"></span><pre>$table</pre></a></li>
+<li class="property public "><a href="#property_tables_created" title="$tables_created :: Used by maybe_create_tables() for bailing early"><span class="description"></span><pre>$tables_created</pre></a></li>
+<li class="property public "><a href="#property_version" title="$version :: The version number for this release of the plugin."><span class="description"></span><pre>$version</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Code_Snippets"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Code_Snippets.html">Code_Snippets</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The main class for our plugin.</p>
+<div class="details">
+<div class="long_description"><p>It all happens here, folks</p>
+
+<p>Please use the global variable $code_snippets to access
+the methods or variables in this class. Anything you need
+to access should be publicly available there</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Code%20Snippets.html">Code Snippets</a></td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>The constructor function for our class</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method is called just as this plugin is included,
+so other plugins may not have loaded yet. Only do stuff
+here that really can't wait</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_activate"></a><div class="element clickable method public method_activate" data-toggle="collapse" data-target=".method_activate .collapse">
+<h2>Activates a snippet</h2>
+<pre>activate(array $ids, string $scope) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To set the snippets' active status</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ids</h4>
+<code>array</code><p>The ids of the snippets to activate</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Are the snippets multisite-wide or site-wide?</p>
+</div>
+</div></div>
+</div>
+<a id="method_build_snippet_object"></a><div class="element clickable method public method_build_snippet_object" data-toggle="collapse" data-target=".method_build_snippet_object .collapse">
+<h2>Converts an array of snippet data into a snippet object</h2>
+<pre>build_snippet_object(mixed $data) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code><p>The snippet data to convert</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>The resulting snippet object</div>
+</div></div>
+</div>
+<a id="method_create_table"></a><div class="element clickable method public method_create_table" data-toggle="collapse" data-target=".method_create_table .collapse">
+<h2>Create a single snippet table
+if one of the same name does not already exist</h2>
+<pre>create_table(string $table_name) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.6</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To add the table to the database</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$table_name</h4>
+<code>string</code><p>The name of the table to create</p></div>
+</div></div>
+</div>
+<a id="method_deactivate"></a><div class="element clickable method public method_deactivate" data-toggle="collapse" data-target=".method_deactivate .collapse">
+<h2>Deactivates selected snippets</h2>
+<pre>deactivate(array $ids, string $scope) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To set the snippets' active status</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ids</h4>
+<code>array</code><p>The IDs of the snippets to deactivate</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Are the snippets multisite-wide or site-wide?</p>
+</div>
+</div></div>
+</div>
+<a id="method_delete_snippet"></a><div class="element clickable method public method_delete_snippet" data-toggle="collapse" data-target=".method_delete_snippet .collapse">
+<h2>Deletes a snippet from the database</h2>
+<pre>delete_snippet(int $id, string $scope) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To access the database</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To dynamically retrieve the name of the snippet table</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>int</code><p>The ID of the snippet to delete</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Delete from site-wide or network-wide table?</p>
+</div>
+</div></div>
+</div>
+<a id="method_escape_snippet_data"></a><div class="element clickable method public method_escape_snippet_data" data-toggle="collapse" data-target=".method_escape_snippet_data .collapse">
+<h2>Escape snippet data for inserting into the database</h2>
+<pre>escape_snippet_data(mixed $snippet) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$snippet</h4>
+<code>mixed</code><p>An object or array containing the data to escape</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>The resulting snippet object, with data escaped</div>
+</div></div>
+</div>
+<a id="method_execute_snippet"></a><div class="element clickable method public method_execute_snippet" data-toggle="collapse" data-target=".method_execute_snippet .collapse">
+<h2>Execute a snippet</h2>
+<pre>execute_snippet(string $code) : \$result</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Code must NOT be escaped, as
+it will be executed directly</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code><p>The snippet code to execute</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\$result</code>The result of the code execution</div>
+</div></div>
+</div>
+<a id="method_export"></a><div class="element clickable method public method_export" data-toggle="collapse" data-target=".method_export .collapse">
+<h2>Exports snippets as an XML file</h2>
+<pre>export(array $ids, string $scope) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To export selected snippets</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To dynamically retrieve the name of the snippet table</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ids</h4>
+<code>array</code><p>The IDs of the snippets to export</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Is the snippet a network-wide or site-wide snippet?</p>
+</div>
+</div></div>
+</div>
+<a id="method_export_php"></a><div class="element clickable method public method_export_php" data-toggle="collapse" data-target=".method_export_php .collapse">
+<h2>Exports snippets as a PHP file</h2>
+<pre>export_php(array $ids, string $scope) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To export selected snippets</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To dynamically retrieve the name of the snippet table</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ids</h4>
+<code>array</code><p>The IDs of the snippets to export</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Is the snippet a network-wide or site-wide snippet?</p>
+</div>
+</div></div>
+</div>
+<a id="method_get_snippet"></a><div class="element clickable method public method_get_snippet" data-toggle="collapse" data-target=".method_get_snippet .collapse">
+<h2>Retrieve a single snippets from the database.</h2>
+<pre>get_snippet(int $id, string $scope) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will return empty snippet object if no snippet
+ID is specified</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To query the database for snippets</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To dynamically retrieve the snippet table name</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>int</code><p>The ID of the snippet to retrieve. 0 to build a new snippet</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Retrieve a multisite-wide or site-wide snippet?</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>A single snippet object</div>
+</div></div>
+</div>
+<a id="method_get_snippets"></a><div class="element clickable method public method_get_snippets" data-toggle="collapse" data-target=".method_get_snippets .collapse">
+<h2>Retrieve a list of snippets from the database</h2>
+<pre>get_snippets(string $scope) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To query the database for snippets</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To dynamically retrieve the snippet table name</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Retrieve multisite-wide or site-wide snippets?</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An array of snippet objects</div>
+</div></div>
+</div>
+<a id="method_get_table_name"></a><div class="element clickable method public method_get_table_name" data-toggle="collapse" data-target=".method_get_table_name .collapse">
+<h2>Return the appropriate snippet table name</h2>
+<pre>get_table_name(string $scope, bool $check_screen) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.6</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Retrieve the multisite table name or the site table name?</p>
+</div>
+<div class="subelement argument">
+<h4>$check_screen</h4>
+<code>bool</code><p>Query the current screen if no scope passed?</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>$table        The snippet table name</div>
+</div></div>
+</div>
+<a id="method_import"></a><div class="element clickable method public method_import" data-toggle="collapse" data-target=".method_import .collapse">
+<h2>Imports snippets from an XML file</h2>
+<pre>import(\file $file, string $scope) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To add the snippets to the database</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>\file</code><p>The path to the XML file to import</p></div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Import into network-wide table or site-wide table?</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The number of snippets imported on success, false on failure</div>
+</div></div>
+</div>
+<a id="method_init"></a><div class="element clickable method public method_init" data-toggle="collapse" data-target=".method_init .collapse">
+<h2>Load the plugin completely</h2>
+<pre>init() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method is called <em>after</em> other plugins
+have been run</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_maybe_create_tables"></a><div class="element clickable method public method_maybe_create_tables" data-toggle="collapse" data-target=".method_maybe_create_tables .collapse">
+<h2>Create the snippet tables if they do not already exist</h2>
+<pre>maybe_create_tables(bool $force) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To create a single snippet table</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To test of the table exists</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To check if we've already done this or not</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$force</h4>
+<code>bool</code><p>Force table creation/upgrade</p>
+</div>
+</div></div>
+</div>
+<a id="method_run_snippets"></a><div class="element clickable method public method_run_snippets" data-toggle="collapse" data-target=".method_run_snippets .collapse">
+<h2>Run the active snippets</h2>
+<pre>run_snippets() : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To grab the active snippets from the database</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To execute a snippet</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>true on success, false on failure</div>
+</div></div>
+</div>
+<a id="method_save_snippet"></a><div class="element clickable method public method_save_snippet" data-toggle="collapse" data-target=".method_save_snippet .collapse">
+<h2>Saves a snippet to the database.</h2>
+<pre>save_snippet(object $snippet, string $scope) : int | bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To update/add the snippet to the database</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To dynamically retrieve the name of the snippet table</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$snippet</h4>
+<code>object</code><p>The snippet to add/update to the database</p>
+</div>
+<div class="subelement argument">
+<h4>$scope</h4>
+<code>string</code><p>Save the snippet to the site-wide or network-wide table?</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code><code>bool</code>The ID of the snippet on success, false on failure</div>
+</div></div>
+</div>
+<a id="method_set_table_vars"></a><div class="element clickable method public method_set_table_vars" data-toggle="collapse" data-target=".method_set_table_vars .collapse">
+<h2>Register the snippet table names with WordPress</h2>
+<pre>set_table_vars() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>\$wpdb</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_setup_ms_roles"></a><div class="element clickable method public method_setup_ms_roles" data-toggle="collapse" data-target=".method_setup_ms_roles .collapse">
+<h2>Register the multisite user roles and capabilities</h2>
+<pre>setup_ms_roles(bool $install) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$install</h4>
+<code>bool</code><p>true to add the capabilities, false to remove</p></div>
+</div></div>
+</div>
+<a id="method_setup_roles"></a><div class="element clickable method public method_setup_roles" data-toggle="collapse" data-target=".method_setup_roles .collapse">
+<h2>Register the user roles and capabilities</h2>
+<pre>setup_roles(bool $install) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$install</h4>
+<code>bool</code><p>true to add the capabilities, false to remove</p></div>
+</div></div>
+</div>
+<a id="method_setup_vars"></a><div class="element clickable method public method_setup_vars" data-toggle="collapse" data-target=".method_setup_vars .collapse">
+<h2>Initialize variables</h2>
+<pre>setup_vars() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.2</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_unescape_snippet_data"></a><div class="element clickable method public method_unescape_snippet_data" data-toggle="collapse" data-target=".method_unescape_snippet_data .collapse">
+<h2>Unescape snippet data after retrieval from the database
+ready for use</h2>
+<pre>unescape_snippet_data(mixed $snippet) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.7</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$snippet</h4>
+<code>mixed</code><p>An object or array containing the data to unescape</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>The resulting snippet object, with data unescaped</div>
+</div></div>
+</div>
+<a id="method_uninstall"></a><div class="element clickable method public method_uninstall" data-toggle="collapse" data-target=".method_uninstall .collapse">
+<h2>Cleans up data created by the Code_Snippets class</h2>
+<pre>uninstall() : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.2</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To remove tables from the database</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To find out which table to drop</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To check the type of installation</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To switch between blogs</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To switch between blogs</td>
+</tr>
+<tr>
+<th>uses</th>
+<td>To remove site options</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_upgrade"></a><div class="element clickable method public method_upgrade" data-toggle="collapse" data-target=".method_upgrade .collapse">
+<h2>Preform upgrade tasks such as deleting and updating options</h2>
+<pre>upgrade() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.2</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_user_can"></a><div class="element clickable method public method_user_can" data-toggle="collapse" data-target=".method_user_can .collapse">
+<h2>Check if the current user can perform some action on snippets or not</h2>
+<pre>user_can(string $do_what) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If multisite, checks if <em>Enable Administration Menus: Snippets</em> is active
+under the <em>Settings > Network Settings</em> network admin menu</p></div>
+<table class="table table-bordered"><tr>
+<th>uses</th>
+<td>To check if the current user can perform a task</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$do_what</h4>
+<code>string</code><p>The task to check against.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code>Whether the current user can perform this task or not</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_admin"> </a><div class="element clickable property public property_admin" data-toggle="collapse" data-target=".property_admin .collapse">
+<h2></h2>
+<pre>$admin </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>Code_Snippets 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="includes.class-admin.html#%5CCode_Snippets_Admin">\Code_Snippets_Admin</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_admin_import"> </a><div class="element clickable property public property_admin_import" data-toggle="collapse" data-target=".property_admin_import .collapse">
+<h2></h2>
+<pre>$admin_import : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Moved to the Code_Snippets_Admin class in 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_admin_import_url"> </a><div class="element clickable property public property_admin_import_url" data-toggle="collapse" data-target=".property_admin_import_url .collapse">
+<h2></h2>
+<pre>$admin_import_url : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Moved to the Code_Snippets_Admin class in 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_admin_manage"> </a><div class="element clickable property public property_admin_manage" data-toggle="collapse" data-target=".property_admin_manage .collapse">
+<h2></h2>
+<pre>$admin_manage : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Moved to the Code_Snippets_Admin class in 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_admin_manage_url"> </a><div class="element clickable property public property_admin_manage_url" data-toggle="collapse" data-target=".property_admin_manage_url .collapse">
+<h2></h2>
+<pre>$admin_manage_url : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Moved to the Code_Snippets_Admin class in 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_admin_single"> </a><div class="element clickable property public property_admin_single" data-toggle="collapse" data-target=".property_admin_single .collapse">
+<h2></h2>
+<pre>$admin_single : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Moved to the Code_Snippets_Admin class in 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_admin_single_url"> </a><div class="element clickable property public property_admin_single_url" data-toggle="collapse" data-target=".property_admin_single_url .collapse">
+<h2></h2>
+<pre>$admin_single_url : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Moved to the Code_Snippets_Admin class in 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_basename"> </a><div class="element clickable property public property_basename" data-toggle="collapse" data-target=".property_basename .collapse">
+<h2></h2>
+<pre>$basename : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_file"> </a><div class="element clickable property public property_file" data-toggle="collapse" data-target=".property_file .collapse">
+<h2></h2>
+<pre>$file : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_list_table"> </a><div class="element clickable property public property_list_table" data-toggle="collapse" data-target=".property_list_table .collapse">
+<h2></h2>
+<pre>$list_table </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.5</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="includes.class-list-table.html#%5CCode_Snippets_List_Table">\Code_Snippets_List_Table</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ms_table"> </a><div class="element clickable property public property_ms_table" data-toggle="collapse" data-target=".property_ms_table .collapse">
+<h2></h2>
+<pre>$ms_table : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>It's better to use $wpdb->snippets and
+$wpdb->ms_snippets, but these are maintained
+as references for backwards-compatibility</p></div></div></div>
+</div>
+<a id="property_plugin_dir"> </a><div class="element clickable property public property_plugin_dir" data-toggle="collapse" data-target=".property_plugin_dir .collapse">
+<h2></h2>
+<pre>$plugin_dir : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_plugin_url"> </a><div class="element clickable property public property_plugin_url" data-toggle="collapse" data-target=".property_plugin_url .collapse">
+<h2></h2>
+<pre>$plugin_url : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_table"> </a><div class="element clickable property public property_table" data-toggle="collapse" data-target=".property_table .collapse">
+<h2></h2>
+<pre>$table : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>It's better to use $wpdb->snippets and
+$wpdb->ms_snippets, but these are maintained
+as references for backwards-compatibility</p></div></div></div>
+</div>
+<a id="property_tables_created"> </a><div class="element clickable property public property_tables_created" data-toggle="collapse" data-target=".property_tables_created .collapse">
+<h2></h2>
+<pre>$tables_created : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_version"> </a><div class="element clickable property public property_version" data-toggle="collapse" data-target=".property_version .collapse">
+<h2></h2>
+<pre>$version : int | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This will later be used for upgrades and enqueueing files</p>
+
+<p>This should be set to the 'Plugin Version' value,
+as defined above in the plugin header</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-15T20:13:58+10:00.<br></footer></div>
+</div>
+</body>
+</html>
