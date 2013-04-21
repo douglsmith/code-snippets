@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project version="2.0.0a12" title="">
-  <file path="code-snippets.php" hash="97b5d3942392a3fa1ef3149e26450849" package="Code Snippets\Main">
+  <file path="code-snippets.php" hash="c785dd9be6f3788ae776496caeb82fb1" package="Code Snippets\Main">
     <docblock line="3">
       <description>Code Snippets - An easy, clean and simple way to add code snippets to your site.</description>
       <long-description>&lt;p&gt;If you're interested in helping to develop Code Snippets, or perhaps
@@ -11,13 +11,13 @@ contribute to the localization, please see http://code-snippets.bungeshea.com&lt
     <include line="201" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="342" type="Require Once" package="Default">
+    <include line="353" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="895" type="Require Once" package="Default">
+    <include line="906" type="Require Once" package="Default">
       <name/>
     </include>
-    <include line="918" type="Require Once" package="Default">
+    <include line="929" type="Require Once" package="Default">
       <name/>
     </include>
     <constant namespace="global" line="133" package="Code Snippets\Main">
@@ -42,7 +42,7 @@ to access should be publicly available there&lt;/p&gt;</long-description>
       </docblock>
       <property final="false" static="false" visibility="public" line="56" namespace="global" package="Default">
         <name>$version</name>
-        <default>1.7</default>
+        <default>'1.7.1'</default>
         <docblock line="45">
           <description>The version number for this release of the plugin.</description>
           <long-description>&lt;p&gt;This will later be used for upgrades and enqueueing files&lt;/p&gt;
@@ -51,18 +51,17 @@ to access should be publicly available there&lt;/p&gt;</long-description>
 as defined above in the plugin header&lt;/p&gt;</long-description>
           <tag line="45" name="since" description="1.0"/>
           <tag line="45" name="access" description="public"/>
-          <tag line="45" name="var" description="For minor releases this should be an integer, but PHP won't recognize .0 or a second decimal point unless it's a string" type="int|string">
-            <type by_reference="false">int</type>
+          <tag line="45" name="var" description="A PHP-standardized version number string" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </property>
       <property final="false" static="false" visibility="public" line="65" namespace="global" package="Default">
         <name>$file</name>
-        <default/>
+        <default></default>
         <docblock line="58">
           <description>Variables to hold plugin paths</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="58" name="since" description="1.0"/>
           <tag line="58" name="access" description="public"/>
           <tag line="58" name="var" description="" type="string">
@@ -72,10 +71,10 @@ as defined above in the plugin header&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="65" namespace="global" package="Default">
         <name>$basename</name>
-        <default/>
+        <default></default>
         <docblock line="58">
           <description>Variables to hold plugin paths</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="58" name="since" description="1.0"/>
           <tag line="58" name="access" description="public"/>
           <tag line="58" name="var" description="" type="string">
@@ -85,10 +84,10 @@ as defined above in the plugin header&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="65" namespace="global" package="Default">
         <name>$plugin_dir</name>
-        <default/>
+        <default></default>
         <docblock line="58">
           <description>Variables to hold plugin paths</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="58" name="since" description="1.0"/>
           <tag line="58" name="access" description="public"/>
           <tag line="58" name="var" description="" type="string">
@@ -98,10 +97,10 @@ as defined above in the plugin header&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="65" namespace="global" package="Default">
         <name>$plugin_url</name>
-        <default/>
+        <default></default>
         <docblock line="58">
           <description>Variables to hold plugin paths</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="58" name="since" description="1.0"/>
           <tag line="58" name="access" description="public"/>
           <tag line="58" name="var" description="" type="string">
@@ -111,10 +110,10 @@ as defined above in the plugin header&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="74" namespace="global" package="Default">
         <name>$list_table</name>
-        <default/>
+        <default></default>
         <docblock line="67">
           <description>Stores an instance of the list table class</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="67" name="since" description="1.5"/>
           <tag line="67" name="access" description="public"/>
           <tag line="67" name="see" description="\Code_Snippets_List_Table" refers="\Code_Snippets_List_Table"/>
@@ -122,10 +121,10 @@ as defined above in the plugin header&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="83" namespace="global" package="Default">
         <name>$admin</name>
-        <default/>
+        <default></default>
         <docblock line="76">
           <description>Stores an instance of the administration class</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="76" name="since" description="Code_Snippets 1.7.1"/>
           <tag line="76" name="access" description="public"/>
           <tag line="76" name="see" description="\Code_Snippets_Admin" refers="\Code_Snippets_Admin"/>
@@ -136,7 +135,7 @@ as defined above in the plugin header&lt;/p&gt;</long-description>
         <default>false</default>
         <docblock line="85">
           <description>Used by maybe_create_tables() for bailing early</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="85" name="var" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
@@ -144,7 +143,7 @@ as defined above in the plugin header&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="100" namespace="global" package="Default">
         <name>$table</name>
-        <default/>
+        <default></default>
         <docblock line="91">
           <description>Stores the snippet table names</description>
           <long-description>&lt;p&gt;It's better to use $wpdb-&gt;snippets and
@@ -157,7 +156,7 @@ as references for backwards-compatibility&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="100" namespace="global" package="Default">
         <name>$ms_table</name>
-        <default/>
+        <default></default>
         <docblock line="91">
           <description>Stores the snippet table names</description>
           <long-description>&lt;p&gt;It's better to use $wpdb-&gt;snippets and
@@ -170,12 +169,12 @@ as references for backwards-compatibility&lt;/p&gt;</long-description>
       </property>
       <property final="false" static="false" visibility="public" line="112" namespace="global" package="Default">
         <name>$admin_manage</name>
-        <default/>
+        <default></default>
         <docblock line="102">
           <description>These are now deprecated in favor of those in
 the Code_Snippets_Admin class, but maintained as
 references so we don't break existing code</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="102" name="since" description="1.0"/>
           <tag line="102" name="deprecated" description="Moved to the Code_Snippets_Admin class in 1.7.1"/>
           <tag line="102" name="access" description="public"/>
@@ -186,12 +185,12 @@ references so we don't break existing code</description>
       </property>
       <property final="false" static="false" visibility="public" line="112" namespace="global" package="Default">
         <name>$admin_single</name>
-        <default/>
+        <default></default>
         <docblock line="102">
           <description>These are now deprecated in favor of those in
 the Code_Snippets_Admin class, but maintained as
 references so we don't break existing code</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="102" name="since" description="1.0"/>
           <tag line="102" name="deprecated" description="Moved to the Code_Snippets_Admin class in 1.7.1"/>
           <tag line="102" name="access" description="public"/>
@@ -202,12 +201,12 @@ references so we don't break existing code</description>
       </property>
       <property final="false" static="false" visibility="public" line="112" namespace="global" package="Default">
         <name>$admin_import</name>
-        <default/>
+        <default></default>
         <docblock line="102">
           <description>These are now deprecated in favor of those in
 the Code_Snippets_Admin class, but maintained as
 references so we don't break existing code</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="102" name="since" description="1.0"/>
           <tag line="102" name="deprecated" description="Moved to the Code_Snippets_Admin class in 1.7.1"/>
           <tag line="102" name="access" description="public"/>
@@ -218,12 +217,12 @@ references so we don't break existing code</description>
       </property>
       <property final="false" static="false" visibility="public" line="112" namespace="global" package="Default">
         <name>$admin_manage_url</name>
-        <default/>
+        <default></default>
         <docblock line="102">
           <description>These are now deprecated in favor of those in
 the Code_Snippets_Admin class, but maintained as
 references so we don't break existing code</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="102" name="since" description="1.0"/>
           <tag line="102" name="deprecated" description="Moved to the Code_Snippets_Admin class in 1.7.1"/>
           <tag line="102" name="access" description="public"/>
@@ -234,12 +233,12 @@ references so we don't break existing code</description>
       </property>
       <property final="false" static="false" visibility="public" line="112" namespace="global" package="Default">
         <name>$admin_single_url</name>
-        <default/>
+        <default></default>
         <docblock line="102">
           <description>These are now deprecated in favor of those in
 the Code_Snippets_Admin class, but maintained as
 references so we don't break existing code</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="102" name="since" description="1.0"/>
           <tag line="102" name="deprecated" description="Moved to the Code_Snippets_Admin class in 1.7.1"/>
           <tag line="102" name="access" description="public"/>
@@ -250,12 +249,12 @@ references so we don't break existing code</description>
       </property>
       <property final="false" static="false" visibility="public" line="112" namespace="global" package="Default">
         <name>$admin_import_url</name>
-        <default/>
+        <default></default>
         <docblock line="102">
           <description>These are now deprecated in favor of those in
 the Code_Snippets_Admin class, but maintained as
 references so we don't break existing code</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="102" name="since" description="1.0"/>
           <tag line="102" name="deprecated" description="Moved to the Code_Snippets_Admin class in 1.7.1"/>
           <tag line="102" name="access" description="public"/>
@@ -298,7 +297,7 @@ have been run&lt;/p&gt;</long-description>
         <full_name>setup_vars</full_name>
         <docblock line="182">
           <description>Initialize variables</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="182" name="since" description="1.2"/>
           <tag line="182" name="access" description="private"/>
           <tag line="182" name="return" description="" type="void">
@@ -311,7 +310,7 @@ have been run&lt;/p&gt;</long-description>
         <full_name>set_table_vars</full_name>
         <docblock line="215">
           <description>Register the snippet table names with WordPress</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="215" name="since" description="1.7"/>
           <tag line="215" name="access" description="public"/>
           <tag line="215" name="uses" description="\$wpdb" refers="\$wpdb"/>
@@ -325,7 +324,7 @@ have been run&lt;/p&gt;</long-description>
         <full_name>get_table_name</full_name>
         <docblock line="241">
           <description>Return the appropriate snippet table name</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="241" name="since" description="1.6"/>
           <tag line="241" name="access" description="public"/>
           <tag line="241" name="param" description="Retrieve the multisite table name or the site table name?" type="string" variable="$scope">
@@ -354,7 +353,7 @@ have been run&lt;/p&gt;</long-description>
         <full_name>maybe_create_tables</full_name>
         <docblock line="276">
           <description>Create the snippet tables if they do not already exist</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="276" name="since" description="1.7.1"/>
           <tag line="276" name="access" description="public"/>
           <tag line="276" name="uses" description="To create a single snippet table" refers="\$this-&gt;create_table()"/>
@@ -373,488 +372,502 @@ have been run&lt;/p&gt;</long-description>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="341" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="331" package="Code Snippets">
+        <name>create_tables</name>
+        <full_name>create_tables</full_name>
+        <docblock line="322">
+          <description>Create the snippet tables if they do not already exist</description>
+          <long-description></long-description>
+          <tag line="322" name="since" description="Code Snippets 1.2"/>
+          <tag line="322" name="deprecated" description="Code Snippets 1.7.1"/>
+          <tag line="322" name="access" description="public"/>
+          <tag line="322" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="352" package="Code Snippets">
         <name>create_table</name>
         <full_name>create_table</full_name>
-        <docblock line="329">
+        <docblock line="340">
           <description>Create a single snippet table
 if one of the same name does not already exist</description>
-          <long-description/>
-          <tag line="329" name="since" description="1.6"/>
-          <tag line="329" name="access" description="private"/>
-          <tag line="329" name="uses" description="To add the table to the database" refers="\dbDelta()"/>
-          <tag line="329" name="param" description="The name of the table to create" type="string" variable="$table_name">
+          <long-description></long-description>
+          <tag line="340" name="since" description="1.6"/>
+          <tag line="340" name="access" description="private"/>
+          <tag line="340" name="uses" description="To add the table to the database" refers="\dbDelta()"/>
+          <tag line="340" name="param" description="The name of the table to create" type="string" variable="$table_name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="329" name="return" description="" type="void">
+          <tag line="340" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="341">
+        <argument line="352">
           <name>$table_name</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="386" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="397" package="Code Snippets">
         <name>upgrade</name>
         <full_name>upgrade</full_name>
-        <docblock line="378">
+        <docblock line="389">
           <description>Preform upgrade tasks such as deleting and updating options</description>
-          <long-description/>
-          <tag line="378" name="since" description="1.2"/>
-          <tag line="378" name="access" description="private"/>
-          <tag line="378" name="return" description="" type="void">
+          <long-description></long-description>
+          <tag line="389" name="since" description="1.2"/>
+          <tag line="389" name="access" description="private"/>
+          <tag line="389" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="452" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="463" package="Code Snippets">
         <name>setup_roles</name>
         <full_name>setup_roles</full_name>
-        <docblock line="443">
+        <docblock line="454">
           <description>Register the user roles and capabilities</description>
-          <long-description/>
-          <tag line="443" name="since" description="1.5"/>
-          <tag line="443" name="access" description="private"/>
-          <tag line="443" name="param" description="true to add the capabilities, false to remove" type="bool" variable="$install">
+          <long-description></long-description>
+          <tag line="454" name="since" description="1.5"/>
+          <tag line="454" name="access" description="private"/>
+          <tag line="454" name="param" description="true to add the capabilities, false to remove" type="bool" variable="$install">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="443" name="return" description="" type="void">
+          <tag line="454" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="452">
+        <argument line="463">
           <name>$install</name>
           <default>true</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="479" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="490" package="Code Snippets">
         <name>setup_ms_roles</name>
         <full_name>setup_ms_roles</full_name>
-        <docblock line="470">
+        <docblock line="481">
           <description>Register the multisite user roles and capabilities</description>
-          <long-description/>
-          <tag line="470" name="since" description="1.5"/>
-          <tag line="470" name="access" description="private"/>
-          <tag line="470" name="param" description="true to add the capabilities, false to remove" type="bool" variable="$install">
+          <long-description></long-description>
+          <tag line="481" name="since" description="1.5"/>
+          <tag line="481" name="access" description="private"/>
+          <tag line="481" name="param" description="true to add the capabilities, false to remove" type="bool" variable="$install">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="470" name="return" description="" type="void">
+          <tag line="481" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="479">
+        <argument line="490">
           <name>$install</name>
           <default>true</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="512" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="523" package="Code Snippets">
         <name>user_can</name>
         <full_name>user_can</full_name>
-        <docblock line="501">
+        <docblock line="512">
           <description>Check if the current user can perform some action on snippets or not</description>
           <long-description>&lt;p&gt;If multisite, checks if &lt;em&gt;Enable Administration Menus: Snippets&lt;/em&gt; is active
 under the &lt;em&gt;Settings &gt; Network Settings&lt;/em&gt; network admin menu&lt;/p&gt;</long-description>
-          <tag line="501" name="uses" description="To check if the current user can perform a task" refers="\current_user_can()"/>
-          <tag line="501" name="param" description="The task to check against." type="string" variable="$do_what">
+          <tag line="512" name="uses" description="To check if the current user can perform a task" refers="\current_user_can()"/>
+          <tag line="512" name="param" description="The task to check against." type="string" variable="$do_what">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="501" name="return" description="Whether the current user can perform this task or not" type="bool">
+          <tag line="512" name="return" description="Whether the current user can perform this task or not" type="bool">
             <type by_reference="false">bool</type>
           </tag>
         </docblock>
-        <argument line="512">
+        <argument line="523">
           <name>$do_what</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="535" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="546" package="Code Snippets">
         <name>build_snippet_object</name>
         <full_name>build_snippet_object</full_name>
-        <docblock line="526">
+        <docblock line="537">
           <description>Converts an array of snippet data into a snippet object</description>
-          <long-description/>
-          <tag line="526" name="since" description="1.7"/>
-          <tag line="526" name="access" description="public"/>
-          <tag line="526" name="param" description="The snippet data to convert" type="mixed" variable="$data">
+          <long-description></long-description>
+          <tag line="537" name="since" description="1.7"/>
+          <tag line="537" name="access" description="public"/>
+          <tag line="537" name="param" description="The snippet data to convert" type="mixed" variable="$data">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="526" name="return" description="The resulting snippet object" type="object">
+          <tag line="537" name="return" description="The resulting snippet object" type="object">
             <type by_reference="false">object</type>
           </tag>
         </docblock>
-        <argument line="535">
+        <argument line="546">
           <name>$data</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="600" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="611" package="Code Snippets">
         <name>get_snippets</name>
         <full_name>get_snippets</full_name>
-        <docblock line="588">
+        <docblock line="599">
           <description>Retrieve a list of snippets from the database</description>
-          <long-description/>
-          <tag line="588" name="since" description="1.7"/>
-          <tag line="588" name="access" description="public"/>
-          <tag line="588" name="uses" description="To query the database for snippets" refers="\$wpdb"/>
-          <tag line="588" name="uses" description="To dynamically retrieve the snippet table name" refers="\$this-&gt;get_table_name()"/>
-          <tag line="588" name="param" description="Retrieve multisite-wide or site-wide snippets?" type="string" variable="$scope">
+          <long-description></long-description>
+          <tag line="599" name="since" description="1.7"/>
+          <tag line="599" name="access" description="public"/>
+          <tag line="599" name="uses" description="To query the database for snippets" refers="\$wpdb"/>
+          <tag line="599" name="uses" description="To dynamically retrieve the snippet table name" refers="\$this-&gt;get_table_name()"/>
+          <tag line="599" name="param" description="Retrieve multisite-wide or site-wide snippets?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="588" name="return" description="An array of snippet objects" type="array">
+          <tag line="599" name="return" description="An array of snippet objects" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
-        <argument line="600">
+        <argument line="611">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="622" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="633" package="Code Snippets">
         <name>escape_snippet_data</name>
         <full_name>escape_snippet_data</full_name>
-        <docblock line="613">
+        <docblock line="624">
           <description>Escape snippet data for inserting into the database</description>
-          <long-description/>
-          <tag line="613" name="since" description="1.7"/>
-          <tag line="613" name="access" description="public"/>
-          <tag line="613" name="param" description="An object or array containing the data to escape" type="mixed" variable="$snippet">
+          <long-description></long-description>
+          <tag line="624" name="since" description="1.7"/>
+          <tag line="624" name="access" description="public"/>
+          <tag line="624" name="param" description="An object or array containing the data to escape" type="mixed" variable="$snippet">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="613" name="return" description="The resulting snippet object, with data escaped" type="object">
+          <tag line="624" name="return" description="The resulting snippet object, with data escaped" type="object">
             <type by_reference="false">object</type>
           </tag>
         </docblock>
-        <argument line="622">
+        <argument line="633">
           <name>$snippet</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="651" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="662" package="Code Snippets">
         <name>unescape_snippet_data</name>
         <full_name>unescape_snippet_data</full_name>
-        <docblock line="641">
+        <docblock line="652">
           <description>Unescape snippet data after retrieval from the database
 ready for use</description>
-          <long-description/>
-          <tag line="641" name="since" description="1.7"/>
-          <tag line="641" name="access" description="public"/>
-          <tag line="641" name="param" description="An object or array containing the data to unescape" type="mixed" variable="$snippet">
+          <long-description></long-description>
+          <tag line="652" name="since" description="1.7"/>
+          <tag line="652" name="access" description="public"/>
+          <tag line="652" name="param" description="An object or array containing the data to unescape" type="mixed" variable="$snippet">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="641" name="return" description="The resulting snippet object, with data unescaped" type="object">
+          <tag line="652" name="return" description="The resulting snippet object, with data unescaped" type="object">
             <type by_reference="false">object</type>
           </tag>
         </docblock>
-        <argument line="651">
+        <argument line="662">
           <name>$snippet</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="677" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="688" package="Code Snippets">
         <name>get_snippet</name>
         <full_name>get_snippet</full_name>
-        <docblock line="662">
+        <docblock line="673">
           <description>Retrieve a single snippets from the database.</description>
           <long-description>&lt;p&gt;Will return empty snippet object if no snippet
 ID is specified&lt;/p&gt;</long-description>
-          <tag line="662" name="since" description="1.7"/>
-          <tag line="662" name="access" description="public"/>
-          <tag line="662" name="uses" description="To query the database for snippets" refers="\$wpdb"/>
-          <tag line="662" name="uses" description="To dynamically retrieve the snippet table name" refers="\$this-&gt;get_table_name()"/>
-          <tag line="662" name="param" description="The ID of the snippet to retrieve. 0 to build a new snippet" type="int" variable="$id">
+          <tag line="673" name="since" description="1.7"/>
+          <tag line="673" name="access" description="public"/>
+          <tag line="673" name="uses" description="To query the database for snippets" refers="\$wpdb"/>
+          <tag line="673" name="uses" description="To dynamically retrieve the snippet table name" refers="\$this-&gt;get_table_name()"/>
+          <tag line="673" name="param" description="The ID of the snippet to retrieve. 0 to build a new snippet" type="int" variable="$id">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="662" name="param" description="Retrieve a multisite-wide or site-wide snippet?" type="string" variable="$scope">
+          <tag line="673" name="param" description="Retrieve a multisite-wide or site-wide snippet?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="662" name="return" description="A single snippet object" type="object">
+          <tag line="673" name="return" description="A single snippet object" type="object">
             <type by_reference="false">object</type>
           </tag>
         </docblock>
-        <argument line="677">
+        <argument line="688">
           <name>$id</name>
           <default>0</default>
           <type/>
         </argument>
-        <argument line="677">
+        <argument line="688">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="705" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="716" package="Code Snippets">
         <name>activate</name>
         <full_name>activate</full_name>
-        <docblock line="693">
+        <docblock line="704">
           <description>Activates a snippet</description>
-          <long-description/>
-          <tag line="693" name="since" description="1.5"/>
-          <tag line="693" name="access" description="public"/>
-          <tag line="693" name="uses" description="To set the snippets' active status" refers="\$wpdb"/>
-          <tag line="693" name="param" description="The ids of the snippets to activate" type="array" variable="$ids">
+          <long-description></long-description>
+          <tag line="704" name="since" description="1.5"/>
+          <tag line="704" name="access" description="public"/>
+          <tag line="704" name="uses" description="To set the snippets' active status" refers="\$wpdb"/>
+          <tag line="704" name="param" description="The ids of the snippets to activate" type="array" variable="$ids">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="693" name="param" description="Are the snippets multisite-wide or site-wide?" type="string" variable="$scope">
+          <tag line="704" name="param" description="Are the snippets multisite-wide or site-wide?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="693" name="return" description="" type="void">
+          <tag line="704" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="705">
+        <argument line="716">
           <name>$ids</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="705">
+        <argument line="716">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="739" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="750" package="Code Snippets">
         <name>deactivate</name>
         <full_name>deactivate</full_name>
-        <docblock line="727">
+        <docblock line="738">
           <description>Deactivates selected snippets</description>
-          <long-description/>
-          <tag line="727" name="since" description="1.5"/>
-          <tag line="727" name="access" description="public"/>
-          <tag line="727" name="uses" description="To set the snippets' active status" refers="\$wpdb"/>
-          <tag line="727" name="param" description="The IDs of the snippets to deactivate" type="array" variable="$ids">
+          <long-description></long-description>
+          <tag line="738" name="since" description="1.5"/>
+          <tag line="738" name="access" description="public"/>
+          <tag line="738" name="uses" description="To set the snippets' active status" refers="\$wpdb"/>
+          <tag line="738" name="param" description="The IDs of the snippets to deactivate" type="array" variable="$ids">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="727" name="param" description="Are the snippets multisite-wide or site-wide?" type="string" variable="$scope">
+          <tag line="738" name="param" description="Are the snippets multisite-wide or site-wide?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="727" name="return" description="" type="void">
+          <tag line="738" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="739">
+        <argument line="750">
           <name>$ids</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="739">
+        <argument line="750">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="786" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="797" package="Code Snippets">
         <name>delete_snippet</name>
         <full_name>delete_snippet</full_name>
-        <docblock line="774">
+        <docblock line="785">
           <description>Deletes a snippet from the database</description>
-          <long-description/>
-          <tag line="774" name="since" description="1.5"/>
-          <tag line="774" name="access" description="public"/>
-          <tag line="774" name="uses" description="To access the database" refers="\$wpdb"/>
-          <tag line="774" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
-          <tag line="774" name="param" description="The ID of the snippet to delete" type="int" variable="$id">
+          <long-description></long-description>
+          <tag line="785" name="since" description="1.5"/>
+          <tag line="785" name="access" description="public"/>
+          <tag line="785" name="uses" description="To access the database" refers="\$wpdb"/>
+          <tag line="785" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
+          <tag line="785" name="param" description="The ID of the snippet to delete" type="int" variable="$id">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="774" name="param" description="Delete from site-wide or network-wide table?" type="string" variable="$scope">
+          <tag line="785" name="param" description="Delete from site-wide or network-wide table?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="786">
+        <argument line="797">
           <name>$id</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="786">
+        <argument line="797">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="809" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="820" package="Code Snippets">
         <name>save_snippet</name>
         <full_name>save_snippet</full_name>
-        <docblock line="796">
+        <docblock line="807">
           <description>Saves a snippet to the database.</description>
-          <long-description/>
-          <tag line="796" name="since" description="1.5"/>
-          <tag line="796" name="access" description="public"/>
-          <tag line="796" name="uses" description="To update/add the snippet to the database" refers="\$wpdb"/>
-          <tag line="796" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
-          <tag line="796" name="param" description="The snippet to add/update to the database" type="object" variable="$snippet">
+          <long-description></long-description>
+          <tag line="807" name="since" description="1.5"/>
+          <tag line="807" name="access" description="public"/>
+          <tag line="807" name="uses" description="To update/add the snippet to the database" refers="\$wpdb"/>
+          <tag line="807" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
+          <tag line="807" name="param" description="The snippet to add/update to the database" type="object" variable="$snippet">
             <type by_reference="false">object</type>
           </tag>
-          <tag line="796" name="param" description="Save the snippet to the site-wide or network-wide table?" type="string" variable="$scope">
+          <tag line="807" name="param" description="Save the snippet to the site-wide or network-wide table?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="796" name="return" description="The ID of the snippet on success, false on failure" type="int|bool">
+          <tag line="807" name="return" description="The ID of the snippet on success, false on failure" type="int|bool">
             <type by_reference="false">int</type>
             <type by_reference="false">bool</type>
           </tag>
         </docblock>
-        <argument line="809">
+        <argument line="820">
           <name>$snippet</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="809">
+        <argument line="820">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="859" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="870" package="Code Snippets">
         <name>import</name>
         <full_name>import</full_name>
-        <docblock line="847">
+        <docblock line="858">
           <description>Imports snippets from an XML file</description>
-          <long-description/>
-          <tag line="847" name="since" description="1.5"/>
-          <tag line="847" name="access" description="public"/>
-          <tag line="847" name="uses" description="To add the snippets to the database" refers="\$this-&gt;save_snippet()"/>
-          <tag line="847" name="param" description="The path to the XML file to import" type="\file" variable="$file">
+          <long-description></long-description>
+          <tag line="858" name="since" description="1.5"/>
+          <tag line="858" name="access" description="public"/>
+          <tag line="858" name="uses" description="To add the snippets to the database" refers="\$this-&gt;save_snippet()"/>
+          <tag line="858" name="param" description="The path to the XML file to import" type="\file" variable="$file">
             <type by_reference="false">\file</type>
           </tag>
-          <tag line="847" name="param" description="Import into network-wide table or site-wide table?" type="string" variable="$scope">
+          <tag line="858" name="param" description="Import into network-wide table or site-wide table?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="847" name="return" description="The number of snippets imported on success, false on failure" type="mixed">
+          <tag line="858" name="return" description="The number of snippets imported on success, false on failure" type="mixed">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
-        <argument line="859">
+        <argument line="870">
           <name>$file</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="859">
+        <argument line="870">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="890" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="901" package="Code Snippets">
         <name>export</name>
         <full_name>export</full_name>
-        <docblock line="877">
+        <docblock line="888">
           <description>Exports snippets as an XML file</description>
-          <long-description/>
-          <tag line="877" name="since" description="1.5"/>
-          <tag line="877" name="access" description="public"/>
-          <tag line="877" name="uses" description="To export selected snippets" refers="\code_snippets_export()"/>
-          <tag line="877" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
-          <tag line="877" name="param" description="The IDs of the snippets to export" type="array" variable="$ids">
+          <long-description></long-description>
+          <tag line="888" name="since" description="1.5"/>
+          <tag line="888" name="access" description="public"/>
+          <tag line="888" name="uses" description="To export selected snippets" refers="\code_snippets_export()"/>
+          <tag line="888" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
+          <tag line="888" name="param" description="The IDs of the snippets to export" type="array" variable="$ids">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="877" name="param" description="Is the snippet a network-wide or site-wide snippet?" type="string" variable="$scope">
+          <tag line="888" name="param" description="Is the snippet a network-wide or site-wide snippet?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="877" name="return" description="" type="void">
+          <tag line="888" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="890">
+        <argument line="901">
           <name>$ids</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="890">
+        <argument line="901">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="913" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="924" package="Code Snippets">
         <name>export_php</name>
         <full_name>export_php</full_name>
-        <docblock line="900">
+        <docblock line="911">
           <description>Exports snippets as a PHP file</description>
-          <long-description/>
-          <tag line="900" name="since" description="1.5"/>
-          <tag line="900" name="access" description="public"/>
-          <tag line="900" name="uses" description="To export selected snippets" refers="\code_snippets_export()"/>
-          <tag line="900" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
-          <tag line="900" name="param" description="The IDs of the snippets to export" type="array" variable="$ids">
+          <long-description></long-description>
+          <tag line="911" name="since" description="1.5"/>
+          <tag line="911" name="access" description="public"/>
+          <tag line="911" name="uses" description="To export selected snippets" refers="\code_snippets_export()"/>
+          <tag line="911" name="uses" description="To dynamically retrieve the name of the snippet table" refers="\$this-&gt;get_table_name()"/>
+          <tag line="911" name="param" description="The IDs of the snippets to export" type="array" variable="$ids">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="900" name="param" description="Is the snippet a network-wide or site-wide snippet?" type="string" variable="$scope">
+          <tag line="911" name="param" description="Is the snippet a network-wide or site-wide snippet?" type="string" variable="$scope">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="900" name="return" description="" type="void">
+          <tag line="911" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="913">
+        <argument line="924">
           <name>$ids</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="913">
+        <argument line="924">
           <name>$scope</name>
           <default>''</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="935" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="946" package="Code Snippets">
         <name>execute_snippet</name>
         <full_name>execute_snippet</full_name>
-        <docblock line="923">
+        <docblock line="934">
           <description>Execute a snippet</description>
           <long-description>&lt;p&gt;Code must NOT be escaped, as
 it will be executed directly&lt;/p&gt;</long-description>
-          <tag line="923" name="since" description="1.5"/>
-          <tag line="923" name="access" description="public"/>
-          <tag line="923" name="param" description="The snippet code to execute" type="string" variable="$code">
+          <tag line="934" name="since" description="1.5"/>
+          <tag line="934" name="access" description="public"/>
+          <tag line="934" name="param" description="The snippet code to execute" type="string" variable="$code">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="923" name="return" description="The result of the code execution" type="\$result">
+          <tag line="934" name="return" description="The result of the code execution" type="\$result">
             <type by_reference="false">\$result</type>
           </tag>
         </docblock>
-        <argument line="935">
+        <argument line="946">
           <name>$code</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="955" package="Code Snippets">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="966" package="Code Snippets">
         <name>run_snippets</name>
         <full_name>run_snippets</full_name>
-        <docblock line="944">
+        <docblock line="955">
           <description>Run the active snippets</description>
-          <long-description/>
-          <tag line="944" name="since" description="1.0"/>
-          <tag line="944" name="access" description="public"/>
-          <tag line="944" name="uses" description="To grab the active snippets from the database" refers="\$wpdb"/>
-          <tag line="944" name="uses" description="To execute a snippet" refers="\$this-&gt;execute_snippet()"/>
-          <tag line="944" name="return" description="true on success, false on failure" type="bool">
+          <long-description></long-description>
+          <tag line="955" name="since" description="1.0"/>
+          <tag line="955" name="access" description="public"/>
+          <tag line="955" name="uses" description="To grab the active snippets from the database" refers="\$wpdb"/>
+          <tag line="955" name="uses" description="To execute a snippet" refers="\$this-&gt;execute_snippet()"/>
+          <tag line="955" name="return" description="true on success, false on failure" type="bool">
             <type by_reference="false">bool</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="1009" package="Code Snippets">
+      <method final="false" abstract="false" static="true" visibility="public" namespace="global" line="1020" package="Code Snippets">
         <name>uninstall</name>
         <full_name>uninstall</full_name>
-        <docblock line="994">
+        <docblock line="1005">
           <description>Cleans up data created by the Code_Snippets class</description>
-          <long-description/>
-          <tag line="994" name="since" description="1.2"/>
-          <tag line="994" name="access" description="private"/>
-          <tag line="994" name="uses" description="To remove tables from the database" refers="\$wpdb"/>
-          <tag line="994" name="uses" description="To find out which table to drop" refers="\$code_snippets-&gt;get_table_name()"/>
-          <tag line="994" name="uses" description="To check the type of installation" refers="\is_multisite()"/>
-          <tag line="994" name="uses" description="To switch between blogs" refers="\switch_to_blog()"/>
-          <tag line="994" name="uses" description="To switch between blogs" refers="\restore_current_blog()"/>
-          <tag line="994" name="uses" description="To remove site options" refers="\delete_option()"/>
-          <tag line="994" name="return" description="" type="void">
+          <long-description></long-description>
+          <tag line="1005" name="since" description="1.2"/>
+          <tag line="1005" name="access" description="private"/>
+          <tag line="1005" name="uses" description="To remove tables from the database" refers="\$wpdb"/>
+          <tag line="1005" name="uses" description="To find out which table to drop" refers="\$code_snippets-&gt;get_table_name()"/>
+          <tag line="1005" name="uses" description="To check the type of installation" refers="\is_multisite()"/>
+          <tag line="1005" name="uses" description="To switch between blogs" refers="\switch_to_blog()"/>
+          <tag line="1005" name="uses" description="To switch between blogs" refers="\restore_current_blog()"/>
+          <tag line="1005" name="uses" description="To remove site options" refers="\delete_option()"/>
+          <tag line="1005" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
@@ -885,10 +898,10 @@ it will be executed directly&lt;/p&gt;</long-description>
       <tag line="3" name="subpackage" description="Administration"/>
     </docblock>
   </file>
-  <file path="includes\class-admin.php" hash="39019025b274c4ba5b8a572c81a5b07b" package="Code Snippets\Administration">
+  <file path="includes\class-admin.php" hash="6608b5623ae239ce20de70662b50f46a" package="Code Snippets\Administration">
     <docblock line="3">
       <description>Contains the class for handling the administration interface</description>
-      <long-description/>
+      <long-description></long-description>
       <tag line="3" name="package" description="Code Snippets"/>
       <tag line="3" name="subpackage" description="Administration"/>
     </docblock>
@@ -932,63 +945,63 @@ re-initialize it. Instead, use the instance in $code_snippets-&gt;admin&lt;/p&gt
       </docblock>
       <property final="false" static="false" visibility="public" line="27" namespace="global" package="Default">
         <name>$manage_url</name>
-        <default/>
+        <default></default>
         <docblock line="21">
           <description>The full URLs to the admin pages</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="21" name="since" description="1.7.1"/>
           <tag line="21" name="access" description="public"/>
         </docblock>
       </property>
       <property final="false" static="false" visibility="public" line="27" namespace="global" package="Default">
         <name>$single_url</name>
-        <default/>
+        <default></default>
         <docblock line="21">
           <description>The full URLs to the admin pages</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="21" name="since" description="1.7.1"/>
           <tag line="21" name="access" description="public"/>
         </docblock>
       </property>
       <property final="false" static="false" visibility="public" line="27" namespace="global" package="Default">
         <name>$import_url</name>
-        <default/>
+        <default></default>
         <docblock line="21">
           <description>The full URLs to the admin pages</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="21" name="since" description="1.7.1"/>
           <tag line="21" name="access" description="public"/>
         </docblock>
       </property>
       <property final="false" static="false" visibility="public" line="36" namespace="global" package="Default">
         <name>$manage_page</name>
-        <default/>
+        <default></default>
         <docblock line="29">
           <description>The hooks for the admin pages
 Used primarily for enqueueing scripts and styles</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="29" name="since" description="1.7.1"/>
           <tag line="29" name="access" description="public"/>
         </docblock>
       </property>
       <property final="false" static="false" visibility="public" line="36" namespace="global" package="Default">
         <name>$single_page</name>
-        <default/>
+        <default></default>
         <docblock line="29">
           <description>The hooks for the admin pages
 Used primarily for enqueueing scripts and styles</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="29" name="since" description="1.7.1"/>
           <tag line="29" name="access" description="public"/>
         </docblock>
       </property>
       <property final="false" static="false" visibility="public" line="36" namespace="global" package="Default">
         <name>$import_page</name>
-        <default/>
+        <default></default>
         <docblock line="29">
           <description>The hooks for the admin pages
 Used primarily for enqueueing scripts and styles</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="29" name="since" description="1.7.1"/>
           <tag line="29" name="access" description="public"/>
         </docblock>
@@ -999,7 +1012,7 @@ Used primarily for enqueueing scripts and styles</description>
         <docblock line="38">
           <description>Initializes the variables and
 loads everything needed for the class</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="38" name="since" description="1.7.1"/>
         </docblock>
       </method>
@@ -1008,7 +1021,7 @@ loads everything needed for the class</description>
         <full_name>setup_hooks</full_name>
         <docblock line="58">
           <description>Register action and filter hooks</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="58" name="since" description="1.7.1"/>
           <tag line="58" name="access" description="private"/>
           <tag line="58" name="return" description="" type="void">
@@ -1021,7 +1034,7 @@ loads everything needed for the class</description>
         <full_name>set_screen_option</full_name>
         <docblock line="94">
           <description>Handles saving the user's snippets per page preference</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="94" name="param" description="" type="\unknown" variable="$status">
             <type by_reference="false">\unknown</type>
           </tag>
@@ -1037,17 +1050,17 @@ loads everything needed for the class</description>
         </docblock>
         <argument line="101">
           <name>$status</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
         <argument line="101">
           <name>$option</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
         <argument line="101">
           <name>$value</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
@@ -1070,7 +1083,7 @@ network admin menu&lt;/p&gt;</long-description>
         </docblock>
         <argument line="118">
           <name>$menu_items</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
@@ -1093,7 +1106,7 @@ and an Import Snippets page to the network admin menu&lt;/p&gt;</long-descriptio
         <full_name>add_admin_menus</full_name>
         <docblock line="159">
           <description>Add the dashboard admin menu and subpages</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="159" name="since" description="1.0"/>
           <tag line="159" name="access" description="private"/>
           <tag line="159" name="uses" description="To register a top-level menu" refers="\add_menu_page()"/>
@@ -1127,7 +1140,7 @@ admin, and so we cannot register an importer&lt;/p&gt;</long-description>
         <full_name>load_admin_icon_style</full_name>
         <docblock line="249">
           <description>Enqueue the icon stylesheet</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="249" name="since" description="1.0"/>
           <tag line="249" name="access" description="private"/>
           <tag line="249" name="uses" description="To add the stylesheet to the queue" refers="\wp_enqueue_style()"/>
@@ -1142,7 +1155,7 @@ admin, and so we cannot register an importer&lt;/p&gt;</long-description>
         <docblock line="272">
           <description>Initializes the list table class and loads the help tabs
 for the Manage Snippets page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="272" name="since" description="1.0"/>
           <tag line="272" name="access" description="private"/>
           <tag line="272" name="return" description="" type="void">
@@ -1155,7 +1168,7 @@ for the Manage Snippets page</description>
         <full_name>load_single_menu</full_name>
         <docblock line="293">
           <description>Loads the help tabs for the Edit Snippets page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="293" name="since" description="1.0"/>
           <tag line="293" name="access" description="private"/>
           <tag line="293" name="uses" description="To save the posted snippet to the database" refers="\$wpdb"/>
@@ -1170,7 +1183,7 @@ for the Manage Snippets page</description>
         <full_name>single_menu_enqueue_scripts</full_name>
         <docblock line="354">
           <description>Registers and loads the code editor's scripts</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="354" name="since" description="1.7"/>
           <tag line="354" name="access" description="private"/>
           <tag line="354" name="uses" description="\wp_register_script()" refers="\wp_register_script()"/>
@@ -1186,7 +1199,7 @@ for the Manage Snippets page</description>
         </docblock>
         <argument line="369">
           <name>$hook</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
@@ -1195,7 +1208,7 @@ for the Manage Snippets page</description>
         <full_name>load_import_menu</full_name>
         <docblock line="453">
           <description>Processes import files and loads the help tabs for the Import Snippets page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="453" name="since" description="1.3"/>
           <tag line="453" name="uses" description="To process the import file" refers="\$code_snippets-&gt;import()"/>
           <tag line="453" name="uses" description="To pass the import results to the page" refers="\wp_redirect()"/>
@@ -1210,7 +1223,7 @@ for the Manage Snippets page</description>
         <full_name>display_manage_menu</full_name>
         <docblock line="479">
           <description>Displays the manage snippets page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="479" name="since" description="1.0"/>
           <tag line="479" name="access" description="private"/>
           <tag line="479" name="return" description="" type="void">
@@ -1223,7 +1236,7 @@ for the Manage Snippets page</description>
         <full_name>display_single_menu</full_name>
         <docblock line="491">
           <description>Displays the single snippet page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="491" name="since" description="1.0"/>
           <tag line="491" name="access" description="private"/>
           <tag line="491" name="return" description="" type="void">
@@ -1236,7 +1249,7 @@ for the Manage Snippets page</description>
         <full_name>display_import_menu</full_name>
         <docblock line="503">
           <description>Displays the import snippets page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="503" name="since" description="1.3"/>
           <tag line="503" name="access" description="private"/>
           <tag line="503" name="return" description="" type="void">
@@ -1249,7 +1262,7 @@ for the Manage Snippets page</description>
         <full_name>description_editor_box</full_name>
         <docblock line="515">
           <description>Add a description editor to the single snippet page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="515" name="since" description="1.7"/>
           <tag line="515" name="access" description="private"/>
           <tag line="515" name="param" description="The snippet being used for this page" type="object" variable="$snippet">
@@ -1258,7 +1271,7 @@ for the Manage Snippets page</description>
         </docblock>
         <argument line="523">
           <name>$snippet</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
@@ -1267,7 +1280,7 @@ for the Manage Snippets page</description>
         <full_name>settings_link</full_name>
         <docblock line="547">
           <description>Adds a link pointing to the Manage Snippets page</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="547" name="since" description="1.0"/>
           <tag line="547" name="access" description="private"/>
           <tag line="547" name="param" description="The existing plugin action links" type="array" variable="$links">
@@ -1279,7 +1292,7 @@ for the Manage Snippets page</description>
         </docblock>
         <argument line="556">
           <name>$links</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
@@ -1288,7 +1301,7 @@ for the Manage Snippets page</description>
         <full_name>plugin_meta</full_name>
         <docblock line="566">
           <description>Adds extra links related to the plugin</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="566" name="since" description="1.2"/>
           <tag line="566" name="access" description="private"/>
           <tag line="566" name="param" description="The existing plugin info links" type="array" variable="$links">
@@ -1303,12 +1316,12 @@ for the Manage Snippets page</description>
         </docblock>
         <argument line="576">
           <name>$links</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
         <argument line="576">
           <name>$file</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
@@ -1733,5 +1746,5 @@ single snippet admin page</description>
   <namespace name="global" full_name="global"/>
   <marker count="0">todo</marker>
   <marker count="0">fixme</marker>
-  <deprecated count="6"/>
+  <deprecated count="7"/>
 </project>

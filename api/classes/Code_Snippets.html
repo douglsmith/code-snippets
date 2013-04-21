@@ -35,7 +35,7 @@
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">6</span></a></li>
+                <span class="label label-info">7</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -62,6 +62,7 @@
 <li class="method public "><a href="#method_create_table" title="create_table :: Create a single snippet table
 if one of the same name does not already exist"><span class="description">Create a single snippet table
 if one of the same name does not already exist</span><pre>create_table()</pre></a></li>
+<li class="method public "><a href="#method_create_tables" title="create_tables :: Create the snippet tables if they do not already exist"><span class="description">Create the snippet tables if they do not already exist</span><pre>create_tables()</pre></a></li>
 <li class="method public "><a href="#method_deactivate" title="deactivate :: Deactivates selected snippets"><span class="description">Deactivates selected snippets</span><pre>deactivate()</pre></a></li>
 <li class="method public "><a href="#method_delete_snippet" title="delete_snippet :: Deletes a snippet from the database"><span class="description">Deletes a snippet from the database</span><pre>delete_snippet()</pre></a></li>
 <li class="method public "><a href="#method_escape_snippet_data" title="escape_snippet_data :: Escape snippet data for inserting into the database"><span class="description">Escape snippet data for inserting into the database</span><pre>escape_snippet_data()</pre></a></li>
@@ -257,6 +258,28 @@ if one of the same name does not already exist</h2>
 <div class="subelement argument">
 <h4>$table_name</h4>
 <code>string</code><p>The name of the table to create</p></div>
+</div></div>
+</div>
+<a id="method_create_tables"></a><div class="element clickable method public method_create_tables" data-toggle="collapse" data-target=".method_create_tables .collapse">
+<h2>Create the snippet tables if they do not already exist</h2>
+<pre>create_tables() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>Code Snippets 1.2</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>Code Snippets 1.7.1</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="method_deactivate"></a><div class="element clickable method public method_deactivate" data-toggle="collapse" data-target=".method_deactivate .collapse">
@@ -1162,7 +1185,7 @@ as references for backwards-compatibility</p></div></div></div>
 </div>
 <a id="property_version"> </a><div class="element clickable property public property_version" data-toggle="collapse" data-target=".property_version .collapse">
 <h2></h2>
-<pre>$version : int | string</pre>
+<pre>$version : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>This will later be used for upgrades and enqueueing files</p>
@@ -1188,7 +1211,7 @@ as defined above in the plugin header</p></div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-04-15T20:13:58+10:00.<br></footer></div>
+            generated on 2013-04-22T09:40:17+10:00.<br></footer></div>
 </div>
 </body>
 </html>
